@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="PT- br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/algoritmos.css">
+    <script src="js/bubbleSort.js" defer></script>
+    <title>Algoritmos</title>
+</head>
+
+<body>
+    <nav>
+        <h1 id="titulo">TechDevs®️</h1>
+        <div id="links">
+            <a href="index.html">Voltar</a>
+            <a href="services.html">Serviços de Rede</a>
+            <a href="componentes.html">Componentes</a>
+            <a href="contato.html">Contato</a>
+        </div>
+    </nav>
+    <main>
+        <h1>Metodo de Ordenação</h1>
+        <h2>BubbleSort</h2>
+        <p>O Bubble sort é um algoritmo simples de ordenação que recebe como entrada uma lista de elementos e produz uma lista ordenada de acordo com um critério.</p>
+        <p>Ordenação do seguinte array: [22, 17, 15, 12, 4, 8]</p>
+        <button id="bubbleSort" onclick="crescente()">Crescente</button>
+        <button id="bubbleSort" onclick="decrescente()">Decrescente</button>
+        <button id="bubbleSort" onclick="mostrar()">Mostrar Código</button>
+        <br><br>
+        <div id="res"></div>
+        <div id="codigo"></div>
+        <pre id="codigoCss" style="display: none;">let res = document.getElementById('res')
+            let array = [22, 17, 15, 12, 4, 8]
+            let aux=0
+            
+            function crescente(){
+                for (let j = array.length - 1; j > 0; j--) {
+                    for (let i = 0; i < array.length - 1; i++) {
+                        if (array[i] > array[i + 1]) {
+                            aux = array[i]
+                            array[i] = array[i + 1]
+                            console.table(array)
+                            array[i + 1] = aux
+                            console.table(array)
+                        }
+            
+                    }
+                }
+                res.innerHTML = ''
+                res.innerHTML = `O array ordenado em ordem crescente ficou ${array}`
+            
+            }
+            function decrescente(){
+                for (let j = array.length - 1; j > 0; j--) {
+                    for (let i = 0; i < array.length - 1; i++) {
+                        if (array[i] < array[i + 1]) {
+                            aux = array[i]
+                            array[i] = array[i + 1]
+                            console.table(array)
+                            array[i + 1] = aux
+                            console.table(array)
+                        }
+            
+                    }
+                }
+                res.innerHTML = ''
+                res.innerHTML = `O array ordenado em ordem decrescente ficou ${array}`
+            }
+                
+        </pre>
+    </main>
+    <footer>
+        <h2>TechDevs®️</h2>
+    </footer>
+</body>
+
+</html>
