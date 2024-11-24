@@ -59,6 +59,12 @@ nav {
     color: #1f9ed0;
     transition: 0.5s ease-in-out;
 }
+#lisElemento {
+    display: flex;
+}
+#elem {
+    width: 100px;
+}   
 footer {
     display: flex;
     justify-content: center;

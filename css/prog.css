@@ -1,19 +1,47 @@
-/* link https://paletadecores.com/paleta/1c7cc2/156cb0/0e5c9e/074c8c/003c7a/ */
+:root {
+    --color1: #120b14;
+    --color1: #123148;
+    --color1: #146388;
+    --color1: #1f9ed0;
+    --color1: #20dbd8;
+}
 
 body {
     padding: 0px;
     margin: 0px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+main{
+    padding: 20px;
+}
+h1{
+    margin-left: 20px;
+    text-align: center;
+}
+p{
+    padding: 10px;
+}
+
 
 nav {
     background-color: #123148;
     color: white;
-    height: 200px;
-    text-align: center;
+    /* height: 90px; */
+}
+button{
+    height: 40px;
+    border-radius: 12px;
+    border: solid, #123148;     
+    background-color: #146388;
+    font-size: 15px;
 }
 
-h1 {
+#codigoCss{
+    border-left: 100px, solid, #146388;
+}
+
+#titulo
+ {
     margin-top: 0;
     text-align: center;
     background-color: #0a1b29   ;
@@ -21,6 +49,7 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-left: 0px;
 }
 
 #links {
@@ -42,14 +71,17 @@ h1 {
     transition: 0.5s ease-in-out;
 }
 #logo {
-    width: 200px;
+    width: 150px;
 }
 footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     text-align: center;
-    background-color: #146388;
-    height: 50px;
+    background-color: #123148;
+    display: flex;
+    
+    
+}
+
+footer a{
+    text-decoration: none;
 
 }

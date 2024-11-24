@@ -5,73 +5,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/algoritmos.css">
-    <script src="js/bubbleSort.js" defer></script>
     <title>Algoritmos</title>
 </head>
 
 <body>
     <nav>
-        <h1 id="titulo">TechDevs®️</h1>
-        <div id="links">
+        <h1 id="titulo">GeraldãoCodes</h1>
+        <div class="lista">
             <a href="index.html">Voltar</a>
             <a href="services.html">Serviços de Rede</a>
-            <a href="componentes.html">Componentes</a>
-            <a href="contato.html">Contato</a>
+            <a href="algoritmos.html">Algoritmos e Fluxogramas</a>
+            <a href="eletronica.html">Eletroeletrônica</a>
+            <a href="bancodedados.html">Banco de Dados</a>
+            <a href="prog.html"></a>
         </div>
     </nav>
     <main>
-        <h1>Metodo de Ordenação</h1>
-        <h2>BubbleSort</h2>
-        <p>O Bubble sort é um algoritmo simples de ordenação que recebe como entrada uma lista de elementos e produz uma lista ordenada de acordo com um critério.</p>
-        <p>Ordenação do seguinte array: [22, 17, 15, 12, 4, 8]</p>
-        <button id="bubbleSort" onclick="crescente()">Crescente</button>
-        <button id="bubbleSort" onclick="decrescente()">Decrescente</button>
-        <button id="bubbleSort" onclick="mostrar()">Mostrar Código</button>
-        <br><br>
-        <div id="res"></div>
-        <div id="codigo"></div>
-        <pre id="codigoCss" style="display: none;">let res = document.getElementById('res')
-            let array = [22, 17, 15, 12, 4, 8]
-            let aux=0
-            
-            function crescente(){
-                for (let j = array.length - 1; j > 0; j--) {
-                    for (let i = 0; i < array.length - 1; i++) {
-                        if (array[i] > array[i + 1]) {
-                            aux = array[i]
-                            array[i] = array[i + 1]
-                            console.table(array)
-                            array[i + 1] = aux
-                            console.table(array)
-                        }
-            
-                    }
-                }
-                res.innerHTML = ''
-                res.innerHTML = `O array ordenado em ordem crescente ficou ${array}`
-            
-            }
-            function decrescente(){
-                for (let j = array.length - 1; j > 0; j--) {
-                    for (let i = 0; i < array.length - 1; i++) {
-                        if (array[i] < array[i + 1]) {
-                            aux = array[i]
-                            array[i] = array[i + 1]
-                            console.table(array)
-                            array[i + 1] = aux
-                            console.table(array)
-                        }
-            
-                    }
-                }
-                res.innerHTML = ''
-                res.innerHTML = `O array ordenado em ordem decrescente ficou ${array}`
-            }
-                
-        </pre>
+        <h1>Exemplos de Algoritmos que utilizamos</h1>
+        <p>Um fluxograma é uma representação visual dos algoritmos e processos de uma empresa, demonstrando o fluxo de
+            entrada de dados, o processamento em cada etapa e os resultados finais. Ele facilita a compreensão dos
+            processos, tornando-os mais claros e acessíveis, e ajuda a identificar possíveis áreas para otimização e
+            melhorias.</p>
+        <img src="./img/locadora_der.png" alt="">
+        <h1>Simbologia de fluxograma</h1>
+        <p>A simbologia padrão de fluxogramas inclui:</p>
+        <div id="listaFormas">
+            <h2>Oval</h2>
+            <p>Início e fim do processo.</p>
+            <img src="./img/oval.png" alt="">
+
+            <h2>Retângulo</h2>
+            <p>Indica uma ação ou processo.</p>
+            <img src="./img/retangulo.png" alt="">
+
+            <h2>Losango</h2>
+            <p>Representa uma decisão com caminhos possíveis.</p>
+            <img src="./img/losangulo.png" alt="">
+
+            <h2>Setas</h2>
+            <p>Direcionam o fluxo do processo.</p>
+            <img src="./img/setas.png" alt="">
+
+            <h2>Paralelograma</h2>
+            <p>Representa entrada e saída de dados.</p>
+            <img src="./img/paralelograma.png" alt="">
+        </div>
+        <h2>Oval</h2>
+
+        <h1>Fluxograma do Bubble Sort</h1>
+        <p>Mostra cada comparação e troca de elementos vizinhos, repetindo até que o array esteja ordenado.</p>
+        <img src="./img/fluxo-bubble.jpg" alt="">
+
+        <h1>Fluxograma do SelectionSort</h1>
+        <p>Demonstra a busca do menor elemento em cada iteração e sua troca para ordenar a lista.</p>
+        <img src="img/fluxo-selection.jpg" alt="">
+
+        <h1>Fluxograma do InsertionSort</h1>
+        <p>Representa a seleção e inserção ordenada de cada elemento, ajustando o restante dos elementos para ordenar.
+        </p>
+        <img src="./img/fluxo-insert.jpg" alt="">
+
+        <h1>Fluxograma com array de pares e ímpares</h1>
+        <p>Este fluxograma exemplifica como um algoritmo separa números e ímpares em um array. O processo inclui
+            percorrer cada número, verifique se é par ou ímpar e direcione-o para a lista correspondente.</p>
+        <img src="./img/fluxo-array-parImpar.jpg" alt="">
+
+        <h1>Exemplo de software para fazer fluxograma</h1>
+        <p>Lucidchart é uma ferramenta online usada para criar fluxogramas. É intuitivo e permite arrastar e soltar
+            elementos, além de oferecer modelos prontos e de compartilhamento colaborativo, sendo ideal para criar
+            fluxogramas de algoritmos e processos empresariais.</p>
+
+
     </main>
     <footer>
-        <h2>TechDevs®️</h2>
+        <h2>GeraldãoCodes
+            <a href="https://www.instagram.com/ruan_gerald/profilecard/?igsh=NXQ0dzR4aGVnbnNp">Instagram</a><br>
+            <a href="https://github.com/ruangerald">GitHub</a>
+        </h2>
     </footer>
 </body>
 

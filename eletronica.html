@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="PT- br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/eletronica.css">
+    <link rel="shortcut icon" href="/img/Logotipo Faustino Representações e Vendas Moderno Preto Branco.png" type="image/x-icon">
+    <title>GeraldãoCodes</title>
+</head>
+
+<body>
+    <nav>
+        <h1 id="titulo">GeraldãoCodes</h1>
+        <div id="links">
+            <a href="index.html">Voltar</a>
+            <a href="services.html">Serviços de Rede</a>
+            <a href="algoritmos.html">Algoritmos e Fluxogramas</a>
+            <a href="eletronica.html">Eletroeletrônica</a>
+            <a href="bancodedados.html">Banco de Dados</a>
+            <a href="prog.html">Programação</a>
+        </div>
+    </nav>
+    <main>
+        <p>Na eletrônica, elementos como resistores, LEDs e displays de sete segmentos desempenham papéis importantes no controle e na exibição de informações. Com o Arduino, é possível desenvolver projetos interativos ao conectar sensores e LEDs, controlando-os por programação. O multímetro é uma ferramenta indispensável para medir tensão, corrente e resistência em circuitos, enquanto o Tinkercad facilita simulações virtuais de circuitos antes de sua construção física. Esses instrumentos são essenciais para a realização de projetos eletrônicos práticos.</p>
+
+        <h1>Resistores e código de Cores</h1>
+        <p>Resistores são dispositivos elétricos projetados para restringir o fluxo de corrente em um circuito. Eles possuem variados valores de resistência, medidos em ohms (Ω). Normalmente, o valor de resistência é indicado por faixas coloridas no corpo do resistor, conforme um código de cores padrão. Cada cor corresponde a um número, e, analisando a sequência dessas faixas, é possível identificar o valor da resistência e a tolerância do componente.</p>
+        <img id="codigoCor" src="./img/cod-resistor.png" alt="">
+
+        <h1>Diodos</h1>
+        <h2>LED's</h2>
+        <p>O LED (diodo emissor de luz) é um componente eletrônico que gera luz quando uma corrente elétrica o atravessa. Ele é amplamente utilizado como indicador visual em diversos tipos de circuitos devido à sua eficiência e durabilidade.</p>
+        <img id="led" src="./img/led.png" alt="">
+
+        <h2>Display de 7 segmentos</h2>
+        <p>O display de sete segmentos é formado por sete LEDs organizados em forma de um número oito, possibilitando a exibição de dígitos de 0 a 9. Esse tipo de display é amplamente utilizado em dispositivos eletrônicos, como calculadoras e relógios digitais, para apresentar informações numéricas de maneira clara e simples.</p>
+        <img id="display" src="./img/display7segmentos.png" alt="">
+
+        <h1>TinkerCad</h1>
+        <p>O Tinkercad é uma plataforma online que permite desenvolver projetos 3D e realizar simulações de circuitos eletrônicos. Um exemplo prático seria montar um circuito simples com um LED, um resistor e um potenciômetro, onde o LED acende ou apaga conforme o ajuste do potenciômetro. A plataforma oferece uma representação visual realista do circuito, possibilitando a captura de tela para demonstrar a organização dos componentes e suas conexões.</p>
+        <img id="tinkercad" src="./img/tikkercad.png" alt="">
+
+        <h1>Placa Arduino</h1>
+        <p>A placa Arduino é uma plataforma de prototipagem eletrônica baseada em hardware e software de código aberto, amplamente utilizada para o desenvolvimento de projetos que integram sensores, LEDs, motores e diversos outros componentes. Entre as versões mais populares estão o Arduino Uno e o Arduino Mega, cada uma com características que atendem a diferentes necessidades de projeto.</p>
+        <img id="arduino" src="./img/arduino.jpg" alt="">
+
+        <h1>IDE Arduimo</h1>
+        <p>O IDE Arduino é o ambiente de desenvolvimento integrado utilizado para escrever, compilar e transferir códigos para a placa Arduino. Um exemplo básico de programa é o "Blink", que faz um LED piscar em intervalos regulares. Esse projeto simples é perfeito para iniciantes aprenderem os fundamentos do funcionamento do Arduino.</p>
+        <img src="img/ide.png" alt="">
+
+        <h1>Entradas</h1>
+        <h2>Entrada analógica no Arduino</h2>
+        <p>As entradas analógicas no Arduino permitem que a placa leia sinais variáveis, como a tensão proveniente de sensores de luz ou temperatura. A placa converte esse sinal analógico, que varia de forma contínua, em um valor digital, que vai de 0 a 1023. Isso facilita a interpretação e o processamento das informações captadas pelos sensores.</p>
+
+        <h2>Entrada digital no Arduino</h2>
+        <p>As entradas digitais no Arduino são projetadas para ler sinais em dois estados: alto (HIGH, 5V) ou baixo (LOW, 0V). Elas são ideais para interpretar sinais binários, como o pressionamento de botões, onde o sinal é simples e só precisa desses dois estados para funcionar corretamente.</p>
+
+        <h1>Saídas</h1>
+        <h2>Saída analógica no Arduino (PWM)</h2>
+        <p>O Arduino não possui uma saída analógica real, mas utiliza saídas PWM (modulação por largura de pulso), que simulam uma saída analógica. Com a técnica de PWM, a placa pode controlar a intensidade de LEDs ou ajustar a velocidade de motores, variando o ciclo de trabalho do sinal, o que dá a impressão de uma saída contínua.</p>
+        <h2>Saída digital no Arduino</h2>
+        <p>As saídas digitais no Arduino enviam sinais em dois estados (HIGH ou LOW), e são utilizadas para ligar ou desligar componentes simples, como LEDs, ou para ativar relés, permitindo o controle de dispositivos maiores e mais complexos.</p>
+
+        <h1>O que é e pra que serve o Multímetro?</h1>
+        <p>Um multímetro é um instrumento de medição usado para verificar tensão (V), corrente (A), resistência (Ω), e outras características elétricas. Ele é essencial em eletrônica para diagnósticos e verificações de circuito.
+
+            <li>Volts (V) para medir tensão.</li>
+            <li>Ampères (A) para medir corrente.</li>
+            <li>Ohms (Ω) para medir resistência.</li>
+            <br>
+            Alguns multímetros avançados medem capacitância (F), frequência (Hz), entre outras grandezas.</p>
+
+
+    </main>
+    <footer>
+        <h2>GeraldãoCodes 
+            <a href="https://www.instagram.com/ruan_gerald/profilecard/?igsh=NXQ0dzR4aGVnbnNp">Instagram</a><br>
+            <a href="https://github.com/ruangerald">GitHub</a></h2>
+    </footer>
+</body>
+
+</html>
