@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/prog.css">
+    <link rel="stylesheet" href="/css/footerNav.css">
     <link rel="shortcut icon" href="img/geraldoCode (1).png" type="image/x-icon">
     <script src="js/bubbleSort.js" defer></script>
+    <script src="js/sidebar.js" defer></script>
     <title>GeraldãoCodes</title>
 </head>
 
@@ -15,113 +17,118 @@
         <h1 id="titulo">GeraldãoCodes</h1>
         <div id="links">
             <img id="logo" src="./img/logoNaoFavicon.png" alt="">
-            <a href="index.html">Voltar</a>
+            <a href="index.html">Home</a>
             <a href="services.html">Serviços de Rede</a>
             <a href="algoritmos.html">Algoritmos e Fluxogramas</a>
             <a href="eletronica.html">Eletroeletrônica</a>
             <a href="bancodedados.html">Banco de Dados</a>
             <a href="prog.html">Programação</a>
         </div>
+        <button id="expandBtn" class="expand-btn">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span> 
+            <span class="icon-bar"></span> 
+                </button> 
     </nav>
-    <main>
-        <h1>Metodo de Ordenação</h1>
-        <h2>BubbleSort</h2>
-        <p>O Bubble sort é um algoritmo simples de ordenação que recebe como entrada uma lista de elementos e produz uma
-            lista ordenada de acordo com um critério.</p>
-        <p>Ordenação do seguinte array: [22, 17, 15, 12, 4, 8]</p>
-        <button id="bubbleSort" onclick="crescente()">Crescente</button>
-        <button id="bubbleSort" onclick="decrescente()">Decrescente</button>
-        <br><br>
-        <div id="res"></div>
-        <div id="codigo"></div>
-        <h2>Método SelectionSort</h2>
-        <p>O Selection Sort é um algoritmo de ordenação simples que funciona selecionando repetidamente o menor (ou
-            maior, dependendo da ordem desejada) elemento de uma lista desordenada e movendo-o para a posição correta.
-        </p>
-        <p>Ordenação do seguinte array: [12,2,22,8,15]</p>
-        <button id="selection" onclick="crescenteSelection()">Crescente</button>
-        <button id="selection" onclick="decrescenteSelection()">Decrescente</button>
-        <div id="res2"></div>
-        <div id="codigo2"></div>
 
-        <h2>InsertionSort</h2>
-        <p>O método Insertion Sort organiza os elementos de uma lista inserindo-os, um por um, na posição correta em
-            relação aos elementos que já estão ordenados. Ele é comparável ao processo de organizar cartas na mão
-            durante um jogo: você pega uma carta de cada vez e a posiciona no lugar certo em relação às cartas já
-            organizadas.</p>
-        <p>Ordenação do seguinte Array [4,10,9,7,16]</p>
-        <button id="insertion" onclick="crescenteInsertion()">Crescente</button>
-        <button id="insertion" onclick="decrescenteInsertion()">Decrescente</button>
-        <div id="res3"></div>
-        <h2>Exercicio 1 da prova de Programação</h2>
-        <p>Um técnico está praticando algoritmos de ordenação e precisa ordenar uma pequena
-            lista de cinco números usando o Bubble Sort em JavaScript de modo crescente, sendo
-            o seguinte array: num = [5, 8, 6, 2, 3, 7, 9]. Elabore o código em JavaScript e apresente o
-            resultado usando o comando console.log. Requisito 1: faça o programa em back end
-            com o Node.js</p>
-        <button id="exec1" onclick="exec1()">Executar</button>
+    <div class="sidebar" id="sidebar">  
+        <div class="sidebar-container">  
+            <button class="close-btn" id="closeBtn">&times;</button>  
+            <a href="index.html">Home</a>
+            <a href="services.html">Serviços de Rede</a>
+            <a href="algoritmos.html">Algoritmos e Fluxogramas</a>
+            <a href="eletronica.html">Eletroeletrônica</a>
+            <a href="bancodedados.html">Banco de Dados</a>
+            <a href="prog.html">Programação</a>
+        </div>  
+    </div>  
+
+
+    <main>
+            <h2>InsertionSort</h2>
+    <p>O método Insertion Sort organiza os elementos de uma lista inserindo-os, um por um, na posição correta em
+        relação aos elementos que já estão ordenados. Ele é comparável ao processo de organizar cartas na mão
+        durante um jogo: você pega uma carta de cada vez e a posiciona no lugar certo em relação às cartas já
+        organizadas.</p>
+    <p>Ordenação do seguinte Array [4,10,9,7,16]</p>
+    <button id="insertion" onclick="crescenteInsertion()">Crescente</button>
+    <button id="insertion" onclick="decrescenteInsertion()">Decrescente</button>
+    <div id="res3"></div>
+    <h2>Exercicio 1 da prova de Programação</h2>
+    <p>Um técnico está praticando algoritmos de ordenação e precisa ordenar uma pequena
+        lista de cinco números usando o Bubble Sort em JavaScript de modo crescente, sendo
+        o seguinte array: num = [5, 8, 6, 2, 3, 7, 9]. Elabore o código em JavaScript e apresente o
+        resultado usando o comando console.log. Requisito 1: faça o programa em back end
+        com o Node.js</p>
+    <button id="exec1" onclick="exec1()">Executar</button>
+    <br><br>
+    <div id="res4"></div>
+    <h2>Exercicio 2 da prova de Programação</h2>
+    <p>Um técnico está praticando algoritmos de ordenação e precisa ordenar uma pequena
+        lista de cinco números usando o Bubble Sort em JavaScript de modo decrescente,
+        sendo o seguinte array: num = [8, 5, 4, 7, 9, 2, 1]. Elabore o código em JavaScript e
+        apresente o resultado usando o comando console.log. Requisito 1: faça o programa em
+        back end com o Node.js</p>
         <br><br>
-        <div id="res4"></div>
-        <h2>Exercicio 2 da prova de Programação</h2>
-        <p>Um técnico está praticando algoritmos de ordenação e precisa ordenar uma pequena
-            lista de cinco números usando o Bubble Sort em JavaScript de modo decrescente,
-            sendo o seguinte array: num = [8, 5, 4, 7, 9, 2, 1]. Elabore o código em JavaScript e
-            apresente o resultado usando o comando console.log. Requisito 1: faça o programa em
-            back end com o Node.js</p>
-        <button id="exec2" onclick="exec2()">Executar</button>
-        <div id="res5"></div>
-        <h2>Exercicio 3 da prova de Programação</h2>
-        <p>Elabore um programa em JavaScript para ordenar em modo crescente uma lista de
-            números aleatórios entre 1 e 20, para um array de 9 números aleatórios, usando o
-            algoritmo Bubble Sort. Apresente o resultado usando o comando console.log.
-            Requisito 1: faça o programa em back end com o Node.js. Observação: Para a função
-            “random”, use a seguinte expressão:
-            valorAleatorio = Math.floor(Math.random() * (max - min + 1) + min)
-            onde: max: maior número do intervalo e min: menor número do intervalo</p>
-        <button id="exec3" onclick="exec3()">Executar</button>
-        <div id="res6"></div>
-        <h2>Usando if/else</h2>
-        <p>Esse programa escreve se o triângulo é Equilátero, Isósceles ou Escaleno. Sendo que:
-            <li>Triângulo Equilátero: possui os 3 lados iguais.</li>
-            <li>Triângulo Isóscele: possui 2 lados iguais. </li>
-            <li>Triângulo Escaleno: possui 3 lados diferentes.
-        </p>
-        </li>
-        <p>Digite os valores:</p>
-        <label for="a">Tamanho do lado A:</label>
-        <input type="text" id="a">
-        <br>
-        <label for="b">Tamanho do Lado B:</label>
-        <input type="text" id="b">
-        <br>
-        <label for="c">Tamanho do lado C</label>
-        <input type="text" id="c">
-        <br><br>
-        <button onclick="ifElse()">Executar</button>
-        <br><br>
-        <div id="res7"></div>
-        <h2>Usando for</h2>
-        <p>Esse programa gera uma fila em ordem crescente:</p>
-        <label for="num">Digite um número:</label>
-        <input type="text" id="num">
-        <br><br>
-        <button onclick="forS()">Executar</button>
-        <br><br>
-        <div id="res8"></div>
-        <h2>Usando While</h2>
-        <p>Esse programa ira criar um calculo fatorial:</p>
-        <label for="fatorial">Digite um número:</label>
-        <input type="text" id="fatorial">
-        <br><br>
-        <button onclick="fator()">Executar</button>
-        <br><br>
-        <div id="res9"></div>
+    <button id="exec2" onclick="exec2()">Executar</button>
+    <br><br>
+    <div id="res5"></div>
+    <h2>Exercicio 3 da prova de Programação</h2>
+    <p>Elabore um programa em JavaScript para ordenar em modo crescente uma lista de
+        números aleatórios entre 1 e 20, para um array de 9 números aleatórios, usando o
+        algoritmo Bubble Sort. Apresente o resultado usando o comando console.log.
+        Requisito 1: faça o programa em back end com o Node.js. Observação: Para a função
+        “random”, use a seguinte expressão:
+        valorAleatorio = Math.floor(Math.random() * (max - min + 1) + min)
+        onde: max: maior número do intervalo e min: menor número do intervalo</p>
+    <button id="exec3" onclick="exec3()">Executar</button>
+    <br><br>
+    <div id="res6"></div>
+    <h2>Usando if/else</h2>
+    <p>Esse programa escreve se o triângulo é Equilátero, Isósceles ou Escaleno. Sendo que:
+        <li>Triângulo Equilátero: possui os 3 lados iguais.</li>
+        <li>Triângulo Isóscele: possui 2 lados iguais. </li>
+        <li>Triângulo Escaleno: possui 3 lados diferentes.
+    </p>
+    </li>
+    <p>Digite os valores:</p>
+    <label for="a">Tamanho do lado A:</label>
+    <input type="text" id="a">
+    <br>
+    <label for="b">Tamanho do Lado B:</label>
+    <input type="text" id="b">
+    <br>
+    <label for="c">Tamanho do lado C</label>
+    <input type="text" id="c">
+    <br><br>
+    <button onclick="ifElse()">Executar</button>
+    <br><br>
+    <div id="res7"></div>
+    <h2>Usando for</h2>
+    <p>Esse programa gera uma fila em ordem crescente:</p>
+    <label for="num">Digite um número:</label>
+    <input type="text" id="num">
+    <br><br>
+    <button onclick="forS()">Executar</button>
+    <br><br>
+    <div id="res8"></div>
+    <h2>Usando While</h2>
+    <p>Esse programa ira criar um calculo fatorial:</p>
+    <label for="fatorial">Digite um número:</label>
+    <input type="text" id="fatorial">
+    <br><br>
+    <button onclick="fator()">Executar</button>
+    <br><br>
+    <div id="res9"></div>
     </main>
 
     <footer>
-        <p>GeraldãoCodes</p>    
-        <a href="https://www.instagram.com/ruan_gerald/profilecard/?igsh=NXQ0dzR4aGVnbnNp">Instagram</a><br>
-        <a href="https://github.com/ruangerald">GitHub</a>
+        <h2>GeraldãoCodes</h2>
+            <div class="footerLinks">
+            <a href="https://www.instagram.com/ruan_gerald/profilecard/?igsh=NXQ0dzR4aGVnbnNp"><img src="img/instagram.png" alt=""></a><br>
+            <a href="https://github.com/ruangerald"><img src="img/github.png" alt=""></a>
+        </div>
     </footer>
 </body>
 </html>

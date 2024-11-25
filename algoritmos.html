@@ -5,28 +5,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/algoritmos.css">
+    <link rel="stylesheet" href="/css/footerNav.css">
+    <script src="js/sidebar.js" defer></script>
     <title>Algoritmos</title>
 </head>
 
 <body>
     <nav>
         <h1 id="titulo">GeraldãoCodes</h1>
-        <div class="lista">
-            <a href="index.html">Voltar</a>
+        <div id="links">
+            <img id="logo" src="./img/logoNaoFavicon.png" alt="">
+            <a href="index.html">Home</a>
             <a href="services.html">Serviços de Rede</a>
             <a href="algoritmos.html">Algoritmos e Fluxogramas</a>
             <a href="eletronica.html">Eletroeletrônica</a>
             <a href="bancodedados.html">Banco de Dados</a>
-            <a href="prog.html"></a>
+            <a href="prog.html">Programação</a>
         </div>
+        <button id="expandBtn" class="expand-btn">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span> 
+            <span class="icon-bar"></span> 
+                </button> 
     </nav>
+
+    <div class="sidebar" id="sidebar">  
+        <div class="sidebar-container">  
+            <button class="close-btn" id="closeBtn">&times;</button>  
+            <a href="index.html">Home</a>
+            <a href="services.html">Serviços de Rede</a>
+            <a href="algoritmos.html">Algoritmos e Fluxogramas</a>
+            <a href="eletronica.html">Eletroeletrônica</a>
+            <a href="bancodedados.html">Banco de Dados</a>
+            <a href="prog.html">Programação</a>
+        </div>  
+    </div>  
+
+
     <main>
         <h1>Exemplos de Algoritmos que utilizamos</h1>
         <p>Um fluxograma é uma representação visual dos algoritmos e processos de uma empresa, demonstrando o fluxo de
             entrada de dados, o processamento em cada etapa e os resultados finais. Ele facilita a compreensão dos
             processos, tornando-os mais claros e acessíveis, e ajuda a identificar possíveis áreas para otimização e
             melhorias.</p>
-        <img src="./img/locadora_der.png" alt="">
+        <img src="./img/locadora_der.png" alt="" width="100%">
         <h1>Simbologia de fluxograma</h1>
         <p>A simbologia padrão de fluxogramas inclui:</p>
         <div id="listaFormas">
@@ -78,10 +101,11 @@
 
     </main>
     <footer>
-        <h2>GeraldãoCodes
-            <a href="https://www.instagram.com/ruan_gerald/profilecard/?igsh=NXQ0dzR4aGVnbnNp">Instagram</a><br>
-            <a href="https://github.com/ruangerald">GitHub</a>
-        </h2>
+        <h2>GeraldãoCodes</h2>
+            <div class="footerLinks">
+            <a href="https://www.instagram.com/ruan_gerald/profilecard/?igsh=NXQ0dzR4aGVnbnNp"><img src="img/instagram.png" alt=""></a><br>
+            <a href="https://github.com/ruangerald"><img src="img/github.png" alt=""></a>
+        </div>
     </footer>
 </body>
 

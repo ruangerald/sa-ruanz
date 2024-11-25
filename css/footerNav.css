@@ -1,0 +1,304 @@
+:root {
+    --color1: #120b14;
+    --color2: #123148;
+    --color3: #146388;
+    --color4: #1f9ed0;
+    --color5: #20dbd8;
+}
+
+/* Estilos Globais */
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    background-color: var(--color3);
+    color: aliceblue;
+}
+
+main {
+    flex: 1;
+    padding: 20px; /* Adiciona um espaçamento ao redor do conteúdo */
+}
+
+h1, h2 {
+    color: var(--color5);
+    margin: 20px 0 10px; /* Margens para espaçamento */
+}
+
+h2 {
+    border-bottom: 2px solid var(--color4); /* Linha abaixo dos subtítulos */
+    padding-bottom: 5px;
+}
+
+.imagens {
+    width: 100%; /* Ajusta a imagem para ser responsiva */
+    max-width: 400px; /* Limita a largura máxima */
+    height: auto; /* Mantém a proporção da imagem */
+    margin: 10px 0; /* Margem vertical para espaçamento */
+}
+
+.break-line {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens quebrem a linha */
+    justify-content: space-around; /* Distribui os itens */
+    margin: 20px 0; /* Margem vertical para espaçamento */
+}
+
+.margin1 {
+    margin: 10px; /* Margem em torno de cada item */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilos de Navegação */
+nav {
+    background-color: var(--color2);
+    color: white;
+    height: 200px;
+    text-align: center;
+}
+
+#titulo {
+    margin-top: 0;
+    text-align: center;
+    background-color: #0a1b29;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.5s ease-in-out;
+}
+
+#links a:hover {
+    color: var(--color4);
+}
+
+#logo {
+    width: 10%;
+    margin-top: -1.5rem;
+}
+
+/* Estilos de Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+.footerLinks {
+    display: flex;
+    justify-content: center;
+}
+
+footer h2 {
+    margin: 0 0 1rem; /* Margem inferior para espaçamento */
+}
+
+footer a img {
+    margin: 0 1rem; /* Margem horizontal entre ícones */
+    width: 50px;
+    height: 50px;
+}
+
+footer a img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.15);
+}
+
+/* Estilos gerais para a navegação */
+nav {
+    background-color: #333;
+    padding: 10px; /* Padding padrão */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Usando flexbox para alinhar os links horizontalmente */
+}
+
+nav ul li {
+    margin-right: 20px; /* Espaçamento entre os links */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px; /* Padding dos links */
+}
+
+/* Media Query para telas menores */
+@media (max-width: 1036px) {
+    nav {
+        padding: 15px; /* Aumenta o padding da nav para caber melhor */
+    }
+
+    nav ul {
+        flex-direction: column; /* Muda a direção dos links para coluna */
+        align-items: center; /* Centraliza os links */
+    }
+
+    nav ul li {
+        margin-right: 0; /* Remove o espaçamento à direita */
+        margin-bottom: 10px; /* Adiciona espaçamento abaixo dos links */
+    }
+
+    nav ul li a {
+        padding: 8px 15px; /* Ajusta o padding dos links para caber melhor */
+        font-size: 14px; /* Diminui o tamanho da fonte dos links */
+    }
+}
+
+.expand-btn a {  
+    color: white; /* Para fazer o texto do link branco */  
+    text-decoration: none; /* Remover a sublinhada do link */  
+    width: 100%; /* O link ocupa toda a largura do botão */  
+    text-align: center; /* Centralizar o texto */  
+}  
+body{
+    font-size: 1rem;
+}
+
+.expand-btn {  
+    display: flex; /* Para alinhar o link centralmente */  
+    justify-content: center; /* Centralizar o texto dentro do botão */  
+    align-items: center; /* Centralizar verticalmente */  
+    background-color: #444;  
+    border: none;  
+    color: white;  
+    padding: 10px;  
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px;
+    transition: background-color 0.3s ease;
+}  
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #a200ff;
+    padding: 10px 4%;
+    border-radius: 19px;
+    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.3);
+    margin-top: 0.5%;
+    margin-left: 0.5%;
+    margin-right: 1%;
+}
+
+.expand-btn:hover {
+    background-color: #444;
+  }
+
+.icon-bar {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 2px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+
+.navbar {  
+    background-color: #333;  
+    padding: 10px;  
+}
+
+.nav-links a, .expand-btn {  
+    color: white;  
+    text-decoration: none;  
+    padding: 10px;  
+}
+
+.sidebar {
+    position: fixed;
+    left: -250px; /* Oculta inicialmente */
+    top: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #120b14;
+    background-size: cover; /* Faz a imagem cobrir totalmente a área */  
+    background-position: center; /* Centraliza a imagem */  
+    background-repeat: no-repeat; /* Evita que a imagem seja repetida */ 
+    transition: left 0.3s ease; /* Animação suave para abrir e fechar */
+    z-index: 999; /* Garantir sobreposição */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Adiciona um efeito de sombra */
+  }
+
+.sidebar.active {
+    left: 0; /* Mostra a barra lateral */
+}
+
+.sidebar-container {  
+    padding: 20px;  
+}
+
+.sidebar a {  
+    display: block;  
+    color: white;  
+    padding: 10px;  
+    text-decoration: none;  
+}
+
+.close-btn {
+    display: none;
+    background: none;  
+    border: none;  
+    color: white;  
+    font-size: 30px;  
+    cursor: pointer;  
+    float: right;  
+}  
+
+.expand-btn.active .icon-bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .expand-btn.active .icon-bar:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+  
+  .expand-btn.active .icon-bar:nth-child(4) {
+    display: none; /* Quarta barra escondida no modo ativo */
+  }
+
+@media (max-width: 1037px) {
+    #links {
+        display: none;
+    }
+}
+
+@media (min-width: 1037px) {
+
+    .expand-btn{
+        display: none;
+    }
+  .sidebar {
+    display: none; /* Oculta a barra lateral em telas maiores */
+  }
+}

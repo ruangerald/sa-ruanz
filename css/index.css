@@ -1,11 +1,4 @@
 /* link https://paletadecores.com/paleta/1c7cc2/156cb0/0e5c9e/074c8c/003c7a/ */
-
-body {
-    padding: 0px;
-    margin: 0px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
 nav {
     background-color: #123148;
     color: white;
@@ -44,12 +37,15 @@ h1 {
 #logo {
     width: 200px;
 }
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: #146388;
-    height: 50px;
 
+@media (max-width: 1037px) {
+    img {
+        width: 100%;
+    }
+}
+img {
+    width: 30%;
+}
+iframe{
+    width: 50%;
 }

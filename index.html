@@ -1,33 +1,69 @@
 <!DOCTYPE html>
-<html lang="PT- br">
+<html lang="PT-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/index.css">
     <link rel="shortcut icon" href="img/geraldoCode (1).png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/footerNav.css">
+    <script src="js/sidebar.js" defer></script>
     <title>GeraldãoCodes</title>
 </head>
 
 <body>
+
     <nav>
         <h1 id="titulo">GeraldãoCodes</h1>
         <div id="links">
             <img id="logo" src="./img/logoNaoFavicon.png" alt="">
+            <a href="index.html">Home</a>
             <a href="services.html">Serviços de Rede</a>
             <a href="algoritmos.html">Algoritmos e Fluxogramas</a>
             <a href="eletronica.html">Eletroeletrônica</a>
             <a href="bancodedados.html">Banco de Dados</a>
             <a href="prog.html">Programação</a>
         </div>
+        <button id="expandBtn" class="expand-btn">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span> 
+            <span class="icon-bar"></span> 
+                </button> 
     </nav>
-    <main>
 
+    <div class="sidebar" id="sidebar">  
+        <div class="sidebar-container">  
+            <button class="close-btn" id="closeBtn">&times;</button>  
+            <a href="index.html">Home</a>
+            <a href="services.html">Serviços de Rede</a>
+            <a href="algoritmos.html">Algoritmos e Fluxogramas</a>
+            <a href="eletronica.html">Eletroeletrônica</a>
+            <a href="bancodedados.html">Banco de Dados</a>
+            <a href="prog.html">Programação</a>
+        </div>  
+    </div>  
+
+    <main>
+        <h2>Sobre nós</h2>
+        <p>Bem-vindo à GeraldãoCodes, uma empresa jovem e inovadora, criada com a missão de transformar ideias em experiências digitais impactantes. Somos apaixonados por tecnologia e comprometidos em oferecer soluções web que impulsionem negócios e conectem pessoas de forma eficiente e criativa.
+
+            Nascemos da visão de que cada projeto é único e merece ser tratado com dedicação e excelência. Trabalhamos com uma equipe talentosa e motivada, que combina criatividade e conhecimento técnico para desenvolver sites, sistemas, e-commerce, banco de dados e tambem eletronica.
+            
+            Nosso foco está em entender as necessidades de cada cliente, traduzindo desafios em resultados reais. Acreditamos em transparência, colaboração e na entrega de projetos que superem expectativas, com design moderno, performance de alta qualidade e tecnologia de ponta.
+            
+            Na GeraldãoCodes, não apenas construímos soluções web — criamos pontes para o futuro digital. Vamos juntos?</p>
+        <p>GeraldãoCodes vem do sobrenome do fundador da empresa "Ruan Geraldo", onde quem se chama Geraldão sempre é alguem que faz de tudo, assim como nós fazemos de tudo referente a tecnologia.</p>
+            <h2>Onde atuamos:</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3547.649887328747!2d-48.63472712454947!3d-27.230139976459316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8a94ad26fb273%3A0xc3b8f5efdfdfc698!2sSENAI%20Tijucas!5e0!3m2!1spt-BR!2sbr!4v1732491959113!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </main>
+
     <footer>
-        <h2>GeraldãoCodes 
-            <a href="https://www.instagram.com/ruan_gerald/profilecard/?igsh=NXQ0dzR4aGVnbnNp">Instagram</a><br>
-            <a href="https://github.com/ruangerald">GitHub</a></h2>
+        <h2>GeraldãoCodes</h2>
+            <div class="footerLinks">
+            <a href="https://www.instagram.com/ruan_gerald/profilecard/?igsh=NXQ0dzR4aGVnbnNp"><img src="img/instagram.png" alt=""></a><br>
+            <a href="https://github.com/ruangerald"><img src="img/github.png" alt=""></a>
+        </div>
     </footer>
 </body>
 

@@ -1,39 +1,10 @@
 :root {
-    --color1: #120b14;
-    --color1: #123148;
-    --color1: #146388;
-    --color1: #1f9ed0;
-    --color1: #20dbd8;
-}
-
-body {
-    padding: 0px;
-    margin: 0px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-main{
-    padding: 20px;
-}
-h1{
-    margin-left: 20px;
-    text-align: center;
-}
-p{
-    padding: 10px;
-}
-
-
-nav {
-    background-color: #123148;
-    color: white;
-    /* height: 90px; */
-}
-button{
-    height: 40px;
-    border-radius: 12px;
-    border: solid, #123148;     
-    background-color: #146388;
-    font-size: 15px;
+    --primary-color: #146388;
+    --secondary-color: #1f9ed0;
+    --background-color: #f0f0f0;
+    --text-color: #333;
+    --button-color: #20dbd8;
+    --button-hover-color: #1f9ed0;
 }
 
 #codigoCss{
@@ -52,36 +23,29 @@ button{
     margin-left: 0px;
 }
 
-#links {
-    display: flex;
-    text-align: center;
-    justify-content: space-around;
-    display: flex;
-    align-items: center;
-}
-
-#links a {
-    text-decoration: none;
+button {
+    background-color: var(--button-color);
     color: white;
-    font-size: 18px;
-    
-}
-#links a:hover{
-    color: #1f9ed0;
-    transition: 0.5s ease-in-out;
-}
-#logo {
-    width: 150px;
-}
-footer {
-    text-align: center;
-    background-color: #123148;
-    display: flex;
-    
-    
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px 0; /* Margem vertical para espaçamento */
+    transition: background-color 0.3s ease;
 }
 
-footer a{
-    text-decoration: none;
+button:hover {
+    background-color: var(--button-hover-color);
+}
 
+@media (max-width: 600px) {
+    main {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    button {
+        width: 100%; /* Botões ocupam a largura total em telas pequenas */
+    }
 }

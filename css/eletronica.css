@@ -6,65 +6,11 @@
     --color1: #20dbd8;
 }
 
-body {
-    padding: 0px;
-    margin: 0px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+@media (max-width: 1037px) {
+    img {
+        width: 100%;
+    }
 }
-main{
-    padding: 20px;
-}
-h1{
-    margin-left: 20px;
-    text-align: center;
-}
-p{
-    padding: 10px;
-}
-
-
-nav {
-    background-color: #123148;
-    color: white;
-    height: 90px;
-}
-
-#titulo
- {
-    margin-top: 0;
-    text-align: center;
-    background-color: #0a1b29   ;
-    height: 35px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 0px;
-}
-
-#links {
-    display: flex;
-    text-align: center;
-    justify-content: space-around;
-    display: flex;
-    align-items: center;
-}
-
-#links a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    
-}
-#links a:hover{
-    color: #1f9ed0;
-    transition: 0.5s ease-in-out;
-}
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: #146388;
-    height: 50px;
-    color: white;
+img {
+    width: 40%;
 }

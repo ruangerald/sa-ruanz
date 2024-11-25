@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/eletronica.css">
+    <link rel="stylesheet" href="/css/footerNav.css">
     <link rel="shortcut icon" href="/img/Logotipo Faustino Representações e Vendas Moderno Preto Branco.png" type="image/x-icon">
+    <script src="js/sidebar.js" defer></script>
     <title>GeraldãoCodes</title>
 </head>
 
@@ -13,14 +15,35 @@
     <nav>
         <h1 id="titulo">GeraldãoCodes</h1>
         <div id="links">
-            <a href="index.html">Voltar</a>
+            <img id="logo" src="./img/logoNaoFavicon.png" alt="">
+            <a href="index.html">Home</a>
             <a href="services.html">Serviços de Rede</a>
             <a href="algoritmos.html">Algoritmos e Fluxogramas</a>
             <a href="eletronica.html">Eletroeletrônica</a>
             <a href="bancodedados.html">Banco de Dados</a>
             <a href="prog.html">Programação</a>
         </div>
+        <button id="expandBtn" class="expand-btn">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span> 
+            <span class="icon-bar"></span> 
+                </button> 
     </nav>
+
+    <div class="sidebar" id="sidebar">  
+        <div class="sidebar-container">  
+            <button class="close-btn" id="closeBtn">&times;</button>  
+            <a href="index.html">Home</a>
+            <a href="services.html">Serviços de Rede</a>
+            <a href="algoritmos.html">Algoritmos e Fluxogramas</a>
+            <a href="eletronica.html">Eletroeletrônica</a>
+            <a href="bancodedados.html">Banco de Dados</a>
+            <a href="prog.html">Programação</a>
+        </div>  
+    </div>  
+
+
     <main>
         <p>Na eletrônica, elementos como resistores, LEDs e displays de sete segmentos desempenham papéis importantes no controle e na exibição de informações. Com o Arduino, é possível desenvolver projetos interativos ao conectar sensores e LEDs, controlando-os por programação. O multímetro é uma ferramenta indispensável para medir tensão, corrente e resistência em circuitos, enquanto o Tinkercad facilita simulações virtuais de circuitos antes de sua construção física. Esses instrumentos são essenciais para a realização de projetos eletrônicos práticos.</p>
 
@@ -74,9 +97,11 @@
 
     </main>
     <footer>
-        <h2>GeraldãoCodes 
-            <a href="https://www.instagram.com/ruan_gerald/profilecard/?igsh=NXQ0dzR4aGVnbnNp">Instagram</a><br>
-            <a href="https://github.com/ruangerald">GitHub</a></h2>
+        <h2>GeraldãoCodes</h2>
+            <div class="footerLinks">
+            <a href="https://www.instagram.com/ruan_gerald/profilecard/?igsh=NXQ0dzR4aGVnbnNp"><img src="img/instagram.png" alt=""></a><br>
+            <a href="https://github.com/ruangerald"><img src="img/github.png" alt=""></a>
+        </div>
     </footer>
 </body>
 
